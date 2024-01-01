@@ -1,0 +1,347 @@
+{
+  "id": "f1635a0c-f0fb-464d-b19a-2c522f334a20",
+  "version": "2.0",
+  "name": "Ecommerce Test",
+  "url": "http://127.0.0.1:8000",
+  "tests": [{
+    "id": "401ad84c-7f2c-4640-a842-88fa6c86a01f",
+    "name": "Test1",
+    "commands": [{
+      "id": "2fd3cfe8-ef04-46ec-abb0-0d00f511de48",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e43b0576-e6df-45dc-a73c-b5593e7b0868",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4586da65-d1d4-453f-8ae2-206ea035f3d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-1-5:nth-child(1) #add-to-cart-btn > .fi-rs-shopping-cart",
+      "targets": [
+        ["css=.col-lg-1-5:nth-child(1) #add-to-cart-btn > .fi-rs-shopping-cart", "css:finder"],
+        ["xpath=//button[@id='add-to-cart-btn']/i", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cee13b8-9409-472e-8393-bae95f806753",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-action-right:nth-child(2) .mini-cart-icon > img",
+      "targets": [
+        ["css=.header-action-right:nth-child(2) .mini-cart-icon > img", "css:finder"],
+        ["xpath=//img[@alt='Nest']", "xpath:img"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89d533af-a736-4f65-8232-f6c25c5d57a3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Proceed To CheckOut",
+      "targets": [
+        ["linkText=Proceed To CheckOut", "linkText"],
+        ["css=.mb-20", "css:finder"],
+        ["xpath=//a[contains(text(),'Proceed To CheckOut')]", "xpath:link"],
+        ["xpath=//main[@id='cart-list']/div[2]/div[2]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/checkout/')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Proceed To CheckOut')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2f0870d-c9f5-407c-8e09-3f501e5093e7",
+      "comment": "",
+      "command": "click",
+      "target": "name=lname",
+      "targets": [
+        ["name=lname", "name"],
+        ["css=.row:nth-child(1) > .form-group:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='lname']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b5c22e1-3f0f-483d-8956-16ca89280fa7",
+      "comment": "",
+      "command": "type",
+      "target": "name=lname",
+      "targets": [
+        ["name=lname", "name"],
+        ["css=.row:nth-child(1) > .form-group:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='lname']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "abderrahman"
+    }, {
+      "id": "f29178f8-da2f-4269-a04f-e8b4c781ec52",
+      "comment": "",
+      "command": "type",
+      "target": "name=fname",
+      "targets": [
+        ["name=fname", "name"],
+        ["css=.row:nth-child(1) > .form-group:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='fname']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "tahiri"
+    }, {
+      "id": "2f2db821-5a3a-4940-8681-0fbd89ae6e73",
+      "comment": "",
+      "command": "type",
+      "target": "name=billing_address",
+      "targets": [
+        ["name=billing_address", "name"],
+        ["css=.row:nth-child(2) > .form-group:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='billing_address']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Al Izdihar immeuble Mandour A, Etage 1, Ap8"
+    }, {
+      "id": "269b1b13-c728-4d1e-b8a1-adec372bc88b",
+      "comment": "",
+      "command": "type",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=.shipping_calculator input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Marrakech"
+    }, {
+      "id": "ba4d8cf7-339b-4947-850d-3c053e36e134",
+      "comment": "",
+      "command": "type",
+      "target": "name=zipcode",
+      "targets": [
+        ["name=zipcode", "name"],
+        ["css=.row:nth-child(4) > .form-group:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='zipcode']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "40000"
+    }, {
+      "id": "91427dd0-e2a6-4963-a930-fd9b23c7b6e6",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.row:nth-child(4) > .form-group:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0639552625"
+    }, {
+      "id": "c68e3b6c-b401-478d-8192-f2dfe564f8c4",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.row:nth-child(5) > .form-group:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": "tahiriabd@gmail.com"
+    }, {
+      "id": "c4344660-145a-4c50-b557-08588c42d809",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Finish Order",
+      "targets": [
+        ["linkText=Finish Order", "linkText"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Finish Order')]", "xpath:link"],
+        ["xpath=//a[@href='http://127.0.0.1:8000/payment-completed']", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Finish Order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bc63c51e-8ffd-402b-a6c9-aef903fde410",
+    "name": "Test1 (1)",
+    "commands": [{
+      "id": "58646cbd-d233-4b88-9be6-fdff4d531924",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb0e2ca8-7b7e-4d5f-92a8-cd4feb63bdb2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56fb5d12-5772-46c1-aa5c-5422850f5651",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-1-5:nth-child(1) #add-to-cart-btn > .fi-rs-shopping-cart",
+      "targets": [
+        ["css=.col-lg-1-5:nth-child(1) #add-to-cart-btn > .fi-rs-shopping-cart", "css:finder"],
+        ["xpath=//button[@id='add-to-cart-btn']/i", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ca5c852-5fbf-401f-8d5f-029eabc8808c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-action-right:nth-child(2) .mini-cart-icon > img",
+      "targets": [
+        ["css=.header-action-right:nth-child(2) .mini-cart-icon > img", "css:finder"],
+        ["xpath=//img[@alt='Nest']", "xpath:img"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af7ea6f8-06d6-4984-b91d-350d2e9c4c8c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Proceed To CheckOut",
+      "targets": [
+        ["linkText=Proceed To CheckOut", "linkText"],
+        ["css=.mb-20", "css:finder"],
+        ["xpath=//a[contains(text(),'Proceed To CheckOut')]", "xpath:link"],
+        ["xpath=//main[@id='cart-list']/div[2]/div[2]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/checkout/')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Proceed To CheckOut')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6928edb-6723-4b39-bb25-0c3145fa642e",
+      "comment": "",
+      "command": "click",
+      "target": "name=lname",
+      "targets": [
+        ["name=lname", "name"],
+        ["css=.row:nth-child(1) > .form-group:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='lname']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85e63279-f0af-4c00-b008-7b55edd673d4",
+      "comment": "",
+      "command": "type",
+      "target": "name=lname",
+      "targets": [
+        ["name=lname", "name"],
+        ["css=.row:nth-child(1) > .form-group:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='lname']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "oukattou"
+    }, {
+      "id": "b4bf54ee-9efb-4aac-aa72-4a66c781e4a4",
+      "comment": "",
+      "command": "type",
+      "target": "name=fname",
+      "targets": [
+        ["name=fname", "name"],
+        ["css=.row:nth-child(1) > .form-group:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='fname']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "othmane"
+    }, {
+      "id": "bd17b0dd-21b6-496d-90bc-fde3783104b8",
+      "comment": "",
+      "command": "type",
+      "target": "name=billing_address",
+      "targets": [
+        ["name=billing_address", "name"],
+        ["css=.row:nth-child(2) > .form-group:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='billing_address']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Al Izdihar immeuble Mandour A, Etage 1, Ap8"
+    }, {
+      "id": "1b8bf97c-f6af-4e85-a337-c4fa11560837",
+      "comment": "",
+      "command": "type",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=.shipping_calculator input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Marrakech"
+    }, {
+      "id": "1147bdcc-f86f-41d5-abdd-a51297108f0e",
+      "comment": "",
+      "command": "type",
+      "target": "name=zipcode",
+      "targets": [
+        ["name=zipcode", "name"],
+        ["css=.row:nth-child(4) > .form-group:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='zipcode']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "40000"
+    }, {
+      "id": "6685758b-dfb5-4741-8587-f985cd89c6b5",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.row:nth-child(4) > .form-group:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "0639552625"
+    }, {
+      "id": "1a9081be-6ab6-4619-a495-2ca791cfc5c2",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.row:nth-child(5) > .form-group:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": "othmaneoukattou@gmail.com"
+    }, {
+      "id": "63200f47-73e0-4e54-85cb-93f1ab44ea3c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Finish Order",
+      "targets": [
+        ["linkText=Finish Order", "linkText"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Finish Order')]", "xpath:link"],
+        ["xpath=//a[@href='http://127.0.0.1:8000/payment-completed']", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Finish Order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d8d20ef4-b963-4852-82d0-e0f070446714",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["401ad84c-7f2c-4640-a842-88fa6c86a01f"]
+  }],
+  "urls": ["http://127.0.0.1:8000/"],
+  "plugins": []
+}
